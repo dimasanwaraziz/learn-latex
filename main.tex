@@ -1,0 +1,43 @@
+\documentclass[a4paper,12pt]{report}
+
+% Preamble: Memuat paket yang dibutuhkan
+\usepackage[utf8]{inputenc}  % Untuk encoding karakter UTF-8
+\usepackage{graphicx}        % Untuk menyisipkan gambar
+\usepackage{amsmath}         % Untuk simbol matematika
+\usepackage{hyperref}        % Untuk hyperlink dalam PDF
+\usepackage{biblatex}        % Untuk daftar pustaka, jika menggunakan BibTeX
+\addbibresource{references.bib}  % Menyisipkan file daftar pustaka
+
+\begin{document}
+
+% Judul Halaman Tesis
+\title{Penerapan Quantum Cryptography dalam Investigasi Forensik untuk Melindungi Integritas Bukti Digital}
+\author{Dimas Anwar Aziz}
+\date{September 2024}
+
+\maketitle  % Mencetak judul halaman
+
+\include{abstract}  % Menyisipkan file abstrak
+\include{acknowledgements}  % Menyisipkan file ucapan terima kasih
+
+% Membuat daftar isi
+\tableofcontents
+\newpage
+
+% Daftar gambar dan tabel (opsional)
+\listoffigures  % Untuk daftar gambar
+\listoftables   % Untuk daftar tabel
+\newpage
+
+% Bab-bab tesis
+\include{chapter1}  % Menyisipkan Bab 1
+\include{chapter2}  % Menyisipkan Bab 2
+\include{chapter3}  % Menyisipkan Bab 3
+\include{chapter4}  % Menyisipkan Bab 4
+\include{conclusion}  % Menyisipkan Kesimpulan
+
+% Daftar Pustaka
+\newpage
+\printbibliography  % Menampilkan daftar pustaka
+
+\end{document}
